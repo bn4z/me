@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon src/index.js localhost 8080",
-    "postinstall": "src/index.js"
+    "postinstall": "node src/index.js"
   },
   "dependencies": {},
   "devDependencies": {
