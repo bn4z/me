@@ -4,11 +4,8 @@
   "description": "bn4z in a command line",
   "main": "src/index.js",
   "scripts": {
-    "start": "nodemon src/index.js localhost 8080",
     "postinstall": "node src/index.js"
   },
   "dependencies": {},
-  "devDependencies": {
-    "nodemon": "1.18.4"
-  }
+  "devDependencies": {}
 }
