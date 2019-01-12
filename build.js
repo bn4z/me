@@ -6,21 +6,21 @@ const options = {
   padding: 0,
   margin: 1,
   borderStyle: "round",
-  borderColor: "blue"
+  borderColor: "cyan"
 };
 const fs = require("fs");
 const path = require("path");
 
 let output = `
-             ${chalk.blue.bold("Benoît Berthoud")}
+             ${chalk.cyan.bold("Benoît Berthoud")}
  --------------------------------------- 
           React Redux developer
 
- https://${chalk.blue("github")}.com/${chalk.yellow("bn4z")} 
- https://${chalk.blue("linkedin")}.com/in/${chalk.yellow("benoit-berthoud")}
- https://${chalk.blue("lepogona")}.com (personal project)
+ https://${chalk.green("github")}.com/${chalk.cyan("bn4z")} 
+ https://${chalk.green("lepogona")}.com (personal project)
+ https://${chalk.green("linkedin")}.com/in/${chalk.cyan("benoit-berthoud")}
  --------------------------------------- 
-                     ${chalk.yellow("benoit@8vectors.com")}`;
+                     ${chalk.cyan("benoit@8vectors.com")}`;
 
 const [, ...trimmed] = output.split("\n");
 const card = chalk.white(boxen(trimmed.join("\n"), options));
