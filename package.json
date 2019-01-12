@@ -1,11 +1,34 @@
 {
-  "name": "bn4z-me",
+  "name": "benoit-berthoud",
   "version": "1.0.0",
-  "description": "bn4z in a command line",
-  "main": "src/index.js",
-  "bin": {
-    "me": "./index.js"
+  "description": "Contact Information about Benoît Berthoud",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
+  "main": "index.js",
+  "bin": {
+    "benoit-berthoud": "./index.js"
+  },
+  "files": [
+    "bin/output"
+  ],
+  "scripts": {
+    "postinstall": "node ./index.js",
+    "build": "node ./build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bn4z/me"
+  },
+  "keywords": [
+    "person",
+    "contact"
+  ],
+  "author": "Benoît Berthoud",
+  "license": "MIT",
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.1"
+  }
 }
